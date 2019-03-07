@@ -1,0 +1,149 @@
+.modal-success,
+.modal{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(51,51,51,0.6);
+	right: 0;
+	display:none;
+    transform: all .5s;
+	z-index: 1000;	
+}
+@media screen and (max-width: 640px) {
+	.close-icon{
+		right: 35px !important;
+	}
+}
+.modal-dialog{
+	width: 433px;
+	height:530px;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	padding: 20px 45px;
+	.close-icon{
+		display: inline-block;
+		background: url('../images/close-icon.png') center/cover no-repeat;
+		height: 20px;
+		width: 20px;
+		position: absolute;
+		right: 5px;
+		top:5px;
+		z-index: 100;
+		cursor: pointer;
+	}
+	.apply-trial-title{
+		font-size: 28px;
+		color: #333333;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 16px;
+	}
+	div{
+		height: 44px;
+		line-height: 44px;
+		margin-bottom: 16px;
+		border: 1px solid #CCCCCC;
+		color: #999999;
+	}
+	input{
+		background: none;
+		outline: none;
+		height: 42px;
+		line-height: 42px;
+		border:none;
+		border-radius: 2px;
+		padding:0 0 0 10px;
+		width: 230px;
+	}
+	.phone-code{
+		border:none;
+		input{
+			height: 44px;
+			line-height: 44px;
+			width: 204px;
+			margin-right: 10px;
+			border: 1px solid #CCCCCC;
+		}
+		button{
+			background-color: #fff;
+			color: #0177FB;
+			border:1px solid #0177FB;
+			height: 44px;
+			line-height: 44px;
+			text-align: center;
+			width: 123px;
+			text-align: center;
+		}
+	}
+	.phone{
+		span{
+			display: inline-block;
+			height: 42px;
+			width: 42px;
+			line-height: 42px;
+			text-align: center;
+			border-right: 1px solid #CCCCCC;
+	
+		}
+	}
+	.submit-info{
+		width: 100%;
+		height: 44px;
+		line-height: 44px;
+		background: #0177FB;
+		font-size: 16px;
+		color: #FFFFFF;
+		border:none;
+	}
+	.alert-info{
+		color:red;
+	}
+	.img-code {
+		border:none;
+		input{
+			height: 44px;
+			line-height: 44px;
+			width: 204px;
+			margin-right: 10px;
+			border: 1px solid #CCCCCC;
+		}
+		.verify-code-img{
+			cursor: pointer;
+			display: inline-block;
+			width: 120px;
+			img{
+				height: 44px;
+			}
+		}
+	}
+}
+.modal-success{
+	.modal-dialog{
+		width: 300px;
+		height: 200px;
+		padding:50px 40px;
+		>span:nth-child(1){
+			font-size: 28px;
+			color: #0177FB;
+			display: block;
+			i{
+				display: inline-block;
+				background:url('../images/index/home-it-icon.png') center/cover no-repeat;
+				height: 34px;
+				width: 34px;
+				vertical-align: middle;
+			}
+		}
+		>span:nth-child(2){
+			margin-top: 18px;
+			font-size: 12px;
+			color: #999999;
+			display: inline-block;
+		}
+	}
+
+}

@@ -1,0 +1,752 @@
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url("../images/values/values-banner-bg.png") center/cover no-repeat;
+    .banner-word{
+      position: absolute;
+      top: 200px;
+      left: 60px;
+    }
+    >p{
+      position: absolute;
+      left: 370px;
+      color: #333333;
+    }
+    >p:nth-child(2){
+      top: 196px;
+      margin: 0;
+      font-size: 44px;
+    }
+    >p:nth-child(3){
+      top: 271px;
+      margin: 0;
+      font-size: 20px;
+    }
+    >p:nth-child(4){
+      height: 54px;
+      width: 150px;
+      top: 351px;
+      margin: 0;
+      font-size: 20px;
+      background-color: #0177FB;
+      line-height: 54px;
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      cursor: pointer;
+      
+    }
+    >p:nth-child(4):hover{
+      box-shadow: 2px 2px 4px rgb(161, 164, 167);
+    }
+    .values-banner-img{
+      width: 687px;
+      height: 402px;
+      background: url('../images/values/values-banner-img.png') center/cover no-repeat;
+      position: absolute;
+      right: 200px;
+      top: 130px;
+    }
+    @media screen and (max-width: 1445px) {
+      .values-banner-img{
+        right: 100px;
+      }
+    }
+    @media screen and (max-width: 1370px) {
+      .values-banner-img{
+        right: 0px;
+      }
+    }
+    .signup-form{
+      position: absolute;
+      right: 90px;
+      top: e("calc(50% - 235px)");
+      width: 430px;
+      height: 470px;
+      padding: 35px 50px;
+      background: #fff;
+      .form-group{
+        margin-bottom: 20px;
+      }
+      input{
+        width: 100%;
+        height: 40px;
+        padding-left: 10px;
+        font-size: 14px;
+        border: 1px solid #bfbfbf;
+        border-radius: 2px;
+      }
+      .code-group{
+        input{
+          width: e("calc(100% - 115px)");
+        }
+      }
+      .mobile-group{
+        font-size: 0;
+        span{
+          display: inline-block;
+          width: 50px;
+          height: 40px;
+          font-size: 16px;
+          line-height: 40px;
+          text-align: center;
+          background: #eee;
+          color: #666;
+          border: 1px solid #bfbfbf;
+          border-right: none;
+          vertical-align: bottom;
+          border-radius: 2px 0 0 2px;
+        }
+        input{
+          width: e("calc(100% - 50px)");
+          font-size: 14px;
+          border-left: none;
+          border-radius: 0 2px 2px 0;
+        }
+      }
+      .getCode{
+        display: block;
+        width:100px;
+        height:38px;
+        float: right;
+        line-height: 38px;
+        text-align: center;
+        font-size: 14px;
+        border:1px solid #eb092e;
+        border-radius:2px;
+        color: #eb092e;
+        cursor: pointer;
+        &.disabled{
+          background: #ccc;
+          border-color: #ccc;
+          color: #fff;
+          cursor: not-allowed;
+        }
+      }
+      .letter-code-group{
+        input{
+          width: e("calc(100% - 200px)");
+        }
+        .verifycodeImg{
+          height: 40px;
+        }
+      }
+      .code-wrap{
+        width: 170px;
+        display: inline-block;
+        vertical-align: bottom;
+      }
+      .submit{
+        display: block;
+        width:100%;
+        height:40px;
+        text-align: center;
+        line-height: 40px;
+        background:#eb092e;
+        border-radius:2px;
+        color: #fff;
+        cursor: pointer;
+      }
+      .error-tip{
+        margin-top: 5px;
+        font-size: 14px;
+        color: #F21648;
+      }
+    }
+  }
+  @media screen and (max-width: 1500px) {
+    .banner>p{
+      left: 150px;
+    }
+  }
+
+.values-content-top {
+  width: 100%;
+  padding-bottom: 80px;
+  >div{
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+    >p:nth-child(1){
+      font-family: MicrosoftYaHei;
+      font-size: 36px;
+      color: #333333;
+      margin-top: 80px;
+    }
+    >p:nth-child(2){
+      font-family: MicrosoftYaHei;
+      font-size: 16px;
+      color: #666666;
+      margin-top: 32px;
+    }
+    img{
+      margin-top: 55px;;
+    }
+  }
+}
+.values-content-tap{
+  width: 100%;
+  // height: 800px;
+  background: #F6F9FE ;
+  position: relative;
+  >div{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding:80px 0;
+    >p{
+      width: 100%;
+      font-size: 36px;
+      color: #333333;
+      text-align: center;
+    }
+    ul{
+      width: 100%;
+      padding-left: 0px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 80px;
+      margin-bottom: 0px;
+      li{
+        width: 320px;
+        height: 396px;
+        margin-right: 110px;
+        position: relative;
+        background-color: #F1F4FB;
+        cursor: pointer;
+        .employee-bg{
+          background: url('../images/values/employee.png') center/cover no-repeat;
+        }
+        .cio-bg{
+          background: url('../images/values/cio.png') center/cover no-repeat;
+        }
+        .it-bg{
+          background: url('../images/values/it.png') center/cover no-repeat;
+        }
+        .employee-bg, .cio-bg, .it-bg{
+          padding-top: 40px;
+          width: 100%;
+          height: 130px;
+          background-size:320px 130px;
+          font-size: 24px;
+          color: #FFFFFF;
+          text-align: center;
+          img{
+            width: 48px;
+            height: 48px;
+            margin-right: 15px;
+          }
+          span{
+            vertical-align: middle;
+          }
+        }
+        .employee-icon, .cio-icon, .it-icon{
+          width: 100%;
+          text-align: center;
+          margin-top: 30px;
+          img{
+            width:60px;
+          }
+        }
+        .employee-text, .cio-text, .it-text{
+          width: 100%;
+          margin-top: 30px;
+          p{
+            text-align: center;
+            font-size: 16px;
+            color: #666666;
+            margin:4px 0 0 0;
+          }
+          >p:nth-child(1){
+            color:#333333;
+            font-size: 22px;
+            margin-bottom: 12px;
+          }
+        }
+      }
+      >li:nth-child(1){
+        background-color: rgb(255, 255, 255); 
+        box-shadow: rgb(218, 232, 248) 0px 4px 12px;
+      }
+      >li:nth-child(3){
+        margin-right: 0px;
+      }
+    }
+    .arrow{
+      width: 0;
+      height: 0;
+      border-width: 25px;
+      border-style: solid;
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+      border-color:transparent transparent #fff transparent;
+    }
+  }
+}
+/* 上划tab栏 */
+.values-content-scroll-tap{
+  border-bottom:1px solid #DDDDDD;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 69px;
+  width: 100%;
+  z-index:99;
+  background-color: #fff;
+  >ul{
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      justify-content:center;
+      height: 60px;
+      line-height: 60px;
+      position: relative;
+      li{
+          margin-right: 100px;
+          padding: 0 4px;
+          cursor: pointer;
+          border-bottom: 0px solid #fff;
+          color:#333;
+      }
+  }
+  .bottom-bar{
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    height: 2px;
+    background-color: #0177FB;
+    width: 68px;
+  }
+}
+
+/*  我是IT */
+.values-it-box {
+  >ul{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0;
+    >li{
+      p{
+        font-size: 36px;
+        color: #333333;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 40px;
+      }
+    }
+    >li:nth-child(1), >li:nth-child(2){
+      text-align: center;
+      padding-top: 80px;
+      border-bottom: 2px dashed #D8E0E9;
+      
+      img{
+        width: 1015px;
+      }
+    }
+    >li:nth-child(3){
+      padding-top: 80px;
+      padding-bottom: 80px;
+      >div{
+        display: flex;
+      }
+      >div>ul{
+        flex: 1;
+        padding: 0px;
+        margin-top: 90px;
+        li{
+          width: 100%;
+          display: inline-block;
+          font-size: 16px;
+          color: #666666;
+          margin-bottom: 19px;
+          >span{
+            margin-left: 123px;
+            display: inline-block;
+            width: 100px;
+            position: relative;
+          }
+          >span:nth-child(1):before{
+            content:'';
+            background-image:url(../../assets/images/values/values-it-icon.png);
+            background-size:34px 34px;
+            position: absolute;
+            top:-6px;
+            left:-51px;
+            width:34px;
+            height:34px;
+          }
+          >span:nth-child(2):after{
+            content:'';
+            background-image:url(../../assets/images/values/values-it-icon.png);
+            background-size:34px 34px;
+            position: absolute;
+            top:-6px;
+            left:-51px;
+            width:34px;
+            height:34px;
+          }
+        }
+      }
+       >div>div{
+        width: 687px;
+      }
+    }
+  }
+}
+/* 我是员工 */
+.values-employee-box{
+  >ul{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0;
+    >li{
+      padding-top: 80px;
+      padding-bottom: 80px;;
+      >p{
+        font-size: 36px;
+        color: #333333;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 40px;
+      }
+    }
+    >li:nth-child(1){
+      border-bottom: 2px dashed #D8E0E9;
+      .employee-top-content{
+        display: flex;
+        .employee-top-img{
+          width: 600px;
+          img{
+            display: inline-block;
+          }
+        }
+        >ul{
+          padding: 0px;
+          margin-top: 60px;
+          margin-left: 170px;
+          .employee-top-text{
+            display: flex;
+            div:nth-child(1){
+              width: 82px;
+            }
+            div:nth-child(2){
+              flex:1;
+              margin-left: 50px;
+            }
+            p{
+              margin: 0px;
+            }
+            p:nth-child(1){
+              font-size: 22px;
+              color: #333333;
+              letter-spacing: 0;
+              margin-bottom: 5px;
+            }
+            p:nth-child(2){
+              font-size: 16px;
+              color: #666666;
+              line-height: 24px;
+            }
+          }
+        }
+        ul>li:nth-child(2), ul>li:nth-child(3){
+          margin-top: 40px;
+        }
+      }
+    }
+    >li:nth-child(2){
+      border-bottom: 2px dashed #D8E0E9;
+      p{
+        margin: 0;
+      }
+      p:nth-child(2){
+        margin-top: 20px;
+        font-size: 16px;
+        color: #666666;
+        letter-spacing: 0;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+    }
+    >li:nth-child(3){
+      padding-bottom: 100px;
+      >ul:nth-child(2){
+        display: flex;
+        justify-content: space-around;
+        padding: 0px;
+        li{
+          position: relative;
+        }
+        li:before{
+          content:'';
+          background-image:url(../../assets/images/values/values-it-icon.png);
+          background-size:34px 34px;
+          position: absolute;
+          top:-7px;
+          left: -45px;
+          width:34px;
+          height:34px;
+        }
+      }
+      .flexslider{
+        width: 100%;
+        height: 330px;
+        padding: 0px;
+        margin-top: 80px;
+        position: relative;
+        overflow: hidden;
+        .values-employee-slider {
+          height: 238px;
+          width: 2400px;
+          li{
+            height: 238px;
+            width: 1180px;
+            float: left;
+            img{
+              height: 238px;
+            }
+          }
+        }
+        .flex-control-nav {
+          position: absolute;
+          bottom: -20px;
+          z-index: 2;
+          width: 100%;
+          text-align: center;
+        }
+        .flex-control-nav li {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          margin: 0 5px;
+          *display: inline;
+          zoom: 1;
+        }
+        .flex-control-nav a {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          line-height: 40px;
+          background-color: #fff;
+          border: 1px solid #C6D9EE;
+          border-radius: 10px;
+          overflow: hidden;
+          cursor: pointer;
+        }
+        .flex-control-nav .flex-active {
+          background-color: #C6D9EE;
+        }
+      }
+    }
+  }
+}
+/* 我是cio */
+.values-cio-box{
+  >ul{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0;
+    >li{
+      padding: 80px 0 60px 0;
+        >p{
+          font-size: 36px;
+          color: #333333;
+          text-align: center;
+          margin: 0;
+          margin-bottom: 40px;
+        }
+    }
+    >li:nth-child(1), >li:nth-child(2) {
+      border-bottom: 2px dashed #D8E0E9;
+    }
+    >li>ul{
+      display: flex;
+      justify-content: space-between;
+      padding: 0px;
+      >li{
+        width: 330px;
+        height: 366px;
+        background: #FFFFFF;
+        box-shadow: 0 0 8px 0 #CCDBEB;
+        border-radius: 4px;
+        padding-left: 48px;
+        div{
+          width: 132px;
+          height: 76px;
+          margin-top: 44px;
+          background-size: cover;
+        }
+        .control-img-left{
+          background-image: url('../images/values/cio-center-2-1.png');
+        }
+        .control-img-center{
+          background-image: url('../images/values/cio-center-2-2.png');
+        }
+        .control-img-right{
+          background-image: url('../images/values/cio-center-2-3.png');
+        }
+        >p:nth-child(2){
+          font-size: 22px;
+          color: #333333;
+        }
+        >p:nth-child(3){
+          font-size: 14px;
+          color: #666666;
+          line-height: 24px;
+          width: 210px;
+        }
+        transition: background-color 1s;
+      }
+      >li:nth-child(1){
+        border-bottom: 10px solid #AC97FF;
+      }
+      >li:nth-child(2){
+        border-bottom: 10px solid #0177FB;
+      }
+      >li:nth-child(3){
+        border-bottom: 10px solid #FE81BB;
+      }
+      >li:nth-child(1):hover{
+        background-color: #AC97FF;
+        p{
+            color:#fff !important;
+        }
+        div{
+          background-image: url('../images/values/cio-center-2-1-1.png');
+        }
+    }
+    >li:nth-child(2):hover{
+        background-color: #0177FB;
+        p{
+            color:#fff !important;
+        }
+        div{
+          background-image: url('../images/values/cio-center-2-2-1.png');
+        }
+    }
+    >li:nth-child(3):hover{
+        background-color: #FE81BB;
+        p{
+            color:#fff !important;
+        }
+        div{
+          background-image: url('../images/values/cio-center-2-3-1.png');
+        }
+    }
+    }
+    >li:nth-child(3){
+      >p:nth-child(1){
+        margin-bottom: 20px;
+      }
+      >p:nth-child(2){
+        font-size: 16px;
+        color: #666666;
+        text-align: center;
+        margin-bottom: 0px;
+      }
+      >div{
+        display: flex;
+        margin-top: 70px;
+        >div{
+          width: 812px;
+        }
+        >ul{
+          padding: 0;
+          flex: 1;
+          padding-right: 0px;
+          padding-left: 30px;
+          >li{
+            position: relative;
+            >span:nth-child(2){
+              margin-left: 20px;
+            }
+            .icon{
+              position: relative;
+              display:inline-block;
+              width:80px;
+              height:80px;
+              background:url(../../assets/images/values/cio-center-3-1.png);
+              background-position: -24px -16px;
+              box-shadow: 1px 7px 13px #CCDBEB;
+              border-radius: 80px;
+              transform: scale(0.5);
+              vertical-align: middle;
+              
+            }
+            .icon-dx{
+              background-position: -24px -16px;
+            }
+            .icon-ss{
+              background-position: -24px -196px;
+            }
+            .icon-sw{
+              background-position: -24px -376px;
+            }
+            .icon-rl{
+              background:url(../../assets/images/values/cio-center-3-2.png);
+              background-position: -24px -16px;
+            }
+            .icon-zw{
+              background:url(../../assets/images/values/cio-center-3-2.png);
+              background-position: -24px -196px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.values-content-bottom {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  background: url(../../assets/images/values/bottom_bg.png) center/cover no-repeat;
+  img {
+    height: 340px;
+  }
+  >p{
+    position: absolute;
+    color: #fff;
+   
+  }
+  >p:nth-child(1){
+    width: 100%;
+    font-size: 40px;
+    margin: 0;
+    top:72px;
+    text-align: center;
+  }
+  >p:nth-child(2){
+    width: 100%;
+    font-size: 20px;
+    margin: 0;
+    top:144px;
+    text-align: center;
+  }
+  >p:nth-child(3){
+    top:214px;
+    left: 50%;
+    margin-left: -75px;
+    width: 150px;
+    height: 54px;
+    font-size: 14px;
+    color: #0177FB;
+    text-align: center;
+    line-height: 54px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  >p:nth-child(3):hover{
+    box-shadow: 2px 2px 9px rgb(161, 164, 167);
+  }
+}
+.values-content-center{
+  display: none;
+}
+.values-content-active{
+  display: block;
+}

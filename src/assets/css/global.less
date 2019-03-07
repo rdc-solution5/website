@@ -1,0 +1,90 @@
+html{
+  touch-action: manipulation;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: lighter;
+}
+h4{
+  font-size: 36px;
+  line-height: 1;
+  margin: 0;
+}
+ul, li {
+  list-style: none;
+  padding: 0px;
+}
+address, blockquote, dl, fieldset, figure, hr, ol, p, pre, ul {
+  margin: 0 0 0 0;
+}
+img{
+  max-width: 100%;
+}
+
+html,body{
+  height: 100%;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #000;
+  opacity: .3;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #000;
+  opacity: .3;
+}
+button::-moz-focus-inner{
+  border:0px;
+}
+:focus {
+  outline: none;
+}
+@font-face {
+  font-family: "HelveNueThin";
+  src: url("../font/HelveticaNeueThn.eot?") format("eot"), url("../font/HelveticaNeueThn.woff") format("woff"), url("../font/HelveticaNeueThn.ttf") format("truetype"), url("../font/HelveticaNeueThn.svg#HelveNueThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.util-clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+.clear {
+  clear: both;
+}
+.line-clamp(@lines, @line-height: 1.3em) {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @lines;
+  overflow: hidden;
+  line-height: @line-height;
+  max-height: @line-height * @lines;
+}
+.am-text-truncate {
+  word-wrap: normal; /* for IE */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.am-vertical-align {
+  font-size: 0;
+  &>* {
+    font-size: 1.6rem;
+  }
+}
+.am-container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+.am-fr{
+    float: right;
+}
+.mgr10{
+    margin-right: 10px
+}

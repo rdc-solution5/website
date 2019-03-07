@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    {{> head }}
+</head>
+
+<body>
+    {{> index_nav }}
+
+    {{> body }}
+    <div class="content-bottom">
+        <p class="top-text">深云SDP</p>
+        <p class="center-text">万物互联时代的企业安全体系</p>
+        <p class="apply-trial apply">申请试用</p>
+    </div>
+    <div class="modal close" id='modal'>
+        <div class="modal-dialog">
+            <i class="close-icon close"></i>
+            <p class="apply-trial-title">欢迎申请试用</p>
+            <form id="apply-trail-form">
+                <div class="phone">
+                    <span>+86</span>
+                    <input type="text" placeholder="请输入11位手机号码" name="mobile">
+                </div>
+                <div class="img-code">
+                    <input type="text" placeholder="验证码" name="code" id="applyCode">
+                    <span class="verify-code-img" title="点击刷新">
+                        <img src="https://www.enterplorer.com/api/getVerifyCode" alt="验证码">
+                    </span>
+                </div>
+                <div class="phone-code">
+                    <input type="text" placeholder="请输入4位验证码" name="authCode">
+                    <button class="get-code">获取验证码</button>
+                </div>
+                <div class="user-name">
+                    <input type="text" placeholder="请输入您的姓名" name="username">
+                </div>
+                <div class="company-name">
+                    <input type="text" placeholder="请输入企业名称" name="companyName">
+                </div>
+                <div class="user-email">
+                    <input type="text" placeholder="请输入您的邮箱" name="userEmail">
+                </div>
+                <button class="submit-info">申请试用</button>
+                <span class="alert-info"></span>
+            </form>
+        </div>
+    </div>
+    <div class="modal close modal-success" id='modal-success'>
+        <div class="modal-dialog">
+            <span><i class="icon-success"></i> 申请试用成功</span>
+            <span>申请试用成功后，我们会在三个工作日内联系您</span>
+        </div>
+    </div>
+    {{> footer }}
+
+    {{> foot }}
+</body>
+
+</html>

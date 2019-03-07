@@ -1,0 +1,377 @@
+.am-tabs-bd{
+    z-index:98!important;
+}
+.banner{
+    position: relative;
+    margin-top: -70px;
+    width: 100%;
+    height: 600px;
+    background: url("../images/product/banner@2x.png") center/cover no-repeat;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
+    .banner-image{
+        max-width:1180px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%,-50%);   
+        transform: translate(-50%,-50%);
+    }
+}
+
+.function-tabs{
+    margin:60px auto 0px;
+    .am-nav-tabs{
+        text-align:center;
+        li{
+            float: none;
+            display: inline-block;
+            margin-bottom: 0;
+            list-style: none;
+            a{
+                padding: 0;
+                margin-right: 115px;
+                font-size: 16px;
+                line-height: 58px;
+                color: #666;
+            }
+        }
+        li.am-active{
+            a{
+                color: #0177FB;
+                border: none;
+                border-bottom: 2px solid #0177FB;
+                background: 0 0;
+            }
+        }
+}
+.function-content{
+    width:100%;       
+    margin: 0 auto 100px;
+    padding-left: 0;
+    z-index: 1;
+    >li{
+        overflow: hidden;
+        margin-top: 100px;
+        >div{
+        max-width: 1180px;
+        margin: 0 auto;
+        h5{
+            text-align: center;
+            color: #333;
+            font-size: 36px;
+            margin-bottom:40px;
+            z-index: 0;
+            }
+ 
+        }
+    }
+    >li:nth-child(2n){
+        background: #F6FAFF;
+        padding: 80px 0;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+    }
+}
+
+@media screen and (max-width: 640px){
+    .function-tabs .am-nav>li {
+        //width: calc(100%/3);
+        width:33%;
+    }
+}
+@media screen and (max-width: 640px){
+    .function-tabs .am-nav>li>a {
+        width: 100%;
+        font-size: 16px;
+        margin-right: 0;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .function-tabs {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: #f2f2f2;
+    }
+}
+@media screen and (max-width: 640px){
+    .function-tabs .am-nav {
+        font-size: 0;
+        border-bottom: none;
+        background: #fff;
+    }
+}
+
+
+    //深云隐盾网关
+div.lr{
+    float: left;
+    width: 440px;
+    margin-top: 100px;
+   
+}
+div.lr+img{
+    width: 100%;
+    max-width: 650px;
+    float: right;
+    z-index: 0;
+}
+.description{
+    color: #666;
+    font-size: 16px;
+    margin-left: 50px;
+    li{
+        height: 60px;
+        // line-height: 60px;
+        position: relative;
+        // display: flex;
+        // justify-items: center;
+        // justify-content: flex-start;
+    }
+    li:before{
+        content: '';
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        background: url("../images/product/desc.png") center center no-repeat;
+        background-size: contain;
+        margin-right: 20px;
+        vertical-align: middle;
+    }
+}
+
+//深云隐盾网关：服务器的隐身防护罩
+.subTitle{
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+//左图右说明
+div.rl{
+    ul{
+       width:  440px;
+       float: right;
+       margin-top: 30px;
+    }
+    img{
+        width: 100%;
+        max-width: 650px;
+    }
+}
+.comment{
+    li{
+        margin-bottom: 42px;
+        padding-left: 20px;
+        // display: flex;
+        // flex-flow:row nowrap;
+        h6{
+            color: #333;
+            font-size: 22px;
+            margin: 0;
+            margin-bottom: 14px;
+        }
+        p{
+            color: #666;
+            font-size:16px;
+        }
+    }
+    li:before{
+        content:'';
+        width: 82px;
+        height: 82px;
+        display: inline-block;
+        background: url('../images/product/doc2-1@2x.png') center center no-repeat;
+        background-size: contain;
+        margin-right: 40px;
+        float: left;
+    }
+    li:nth-child(2):before{
+        background: url('../images/product/vpn2-2@2x.png') center center no-repeat;
+        background-size: contain;
+    }
+    li:nth-child(3):before{
+        background: url('../images/product/lock2-3@2x.png') center center no-repeat;
+        background-size: contain;
+    }
+}
+
+.tb{
+    .horizon{
+        // display: flex;
+        // flex-flow: row nowrap;
+        // justify-content:space-around;  
+        text-align: center;
+        margin-bottom: 30px;
+        li{
+            display: inline-block;
+            margin-right: 90px;
+        }
+    }
+
+}
+.column2,.column3{
+    div{
+        // display: flex;
+        // flex-flow: row nowrap;
+        div{
+            width: 546px;
+            display: inline-block;
+            // float: right;
+            // display: flex;
+            // flex-flow:column nowrap;
+            img{
+                height: 300px;
+                margin-bottom: 30px;
+            }
+            h6{
+                font-size: 22px;
+                color: #333;
+                margin: 0;   
+                margin-bottom: 12px;
+
+            }
+            p{
+                color: #666;
+                font-size: 14px;
+            }
+        }
+        div:first-child{
+           margin-right:  88px;
+           float: left;
+        }
+    }
+}
+.column3{
+    >div{
+        // display: flex;
+        // justify-content: space-between;
+        div{
+            width: 330px;
+            height: 366px;
+            // margin-right: 95px;
+            box-shadow: 0 0 8px 0 #CCDBEB;
+            border-radius: 4px;
+            border-bottom: 10px solid #AC97FF;
+            padding-right: 58px;
+            float: left;
+            margin-right: 95px;
+            img{
+                margin: 60px 45px 55px;
+            }
+
+            h6{
+                margin: 0 48px 28px;
+                font-size: 22px;
+                color: #333;
+            }
+            p{
+                margin-left: 48px;
+            }
+        }
+        div:nth-child(2){
+            border: none;
+            background: #0177FB;
+            box-shadow: 0 16px 30px 0;
+            margin-right: 95px;
+            h6,p{
+                color: #fff!important;
+            }
+        }
+        div:nth-child(3){
+            border: none;
+            box-shadow: 0 0 8px 0 #CCDBEB;
+            border-bottom: 10px solid #FE81BB;
+            margin:0;
+        }
+    }
+    
+   
+    img{
+        width: 105px;
+        height: 68px!important;
+    }
+}
+
+//发现异常行为，进行二次验证
+.verification{
+    width: 340px!important;
+    // display: flex;
+    // flex-flow: row wrap;
+    li{
+        height: 40px;
+        line-height: 40px;
+        // display: flex;
+        margin-right: 44px;
+        margin-bottom: 50px;
+        color: #666;
+        font-size: 16px;
+        text-align: right;
+        float:left;
+    }
+    li:before{
+        content: '';
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background:url('../images/product/icon6-1@2x.png') center center no-repeat;
+        background-size: contain;
+        margin-right: 12px;
+        vertical-align: middle;
+    }
+    li:nth-child(2):before{
+        background:url('../images/product/icon6-2@2x.png') center center no-repeat;
+        background-size: contain;
+    }
+    li:nth-child(3):before{
+        background:url('../images/product/icon6-3@2x.png') center center no-repeat;
+        background-size: contain;
+    }
+    li:nth-child(4):before{
+        background:url('../images/product/icon6-4@2x.png') center center no-repeat;
+        background-size: contain;
+    }
+    li:nth-child(5):before{
+        background:url('../images/product/icon6-5@2x.png') center center no-repeat;
+        background-size: contain;
+    }
+    
+}
+
+//以下为安全大脑
+.average{
+    >h6{
+        color: #333;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    >div{
+        >div{
+           width: 590px;
+           float: left;
+        }
+        >div:first-child{
+
+        }
+        >div:last-child{
+            padding:0 112px;
+           
+        }
+    }
+    
+    
+}
+
+.fourpart{
+    >div{
+        width: 167px;
+        height: 188px;
+        float: left;
+        // display: inline-block;
+    }
+}

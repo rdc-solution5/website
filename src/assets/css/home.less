@@ -1,0 +1,220 @@
+/* banner */
+.banner{
+  position: relative;
+  margin-top: -70px;
+  width: 100%;
+  height: 600px;
+  background: url("../images/index/banner.png") center/cover no-repeat;
+  .banner-text {
+    position: absolute;
+    left: 370px;
+    top: 135px;
+    color: #fff;
+    .top-text {
+      font-size: 44px;
+    }
+    .center-text {
+      font-size: 36px;
+    }
+    .bottom-text {
+      font-size: 20px;
+      margin-top: 15px;
+    }
+    .apply-trial {
+      margin-top: 40px;
+    }
+  }
+}
+@media screen and (max-width: 1500px) {
+  .banner .banner-text{
+    left: 100px;
+  }
+}
+
+/* content */
+.index-content {
+  .content-text {
+    padding: 0 16px;
+  }
+  .what-sdp {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding:80px 0 0 0;
+  }
+  .sdp-advantage {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding:80px 0;
+    .sdp-advantage-pack {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      div{
+        width: 274px;
+        height: 283px;
+        background: #FFFFFF;
+        box-shadow: 0 2px 8px 0 rgba(219,219,219,0.50);
+        border-radius: 2px 1px 1px 1px;
+        p:nth-child(2) {
+          margin-top:10px;
+          padding:0 18px;
+          font-size: 20px;
+          color: #0177FB;
+        }
+        p:nth-child(3) {
+          padding:0 18px;
+          font-size: 14px;
+          color: #666666;
+        }
+      }
+    }
+  }
+  .safety-model {
+    background: #F6FAFF;
+    padding:80px 0 0 0;
+    height: 855px;
+    >div {
+      max-width: 1180px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .safety-model-left {
+      width: 569px;
+      height: 444px;
+      background: #E8F3FF;
+      padding-top: 30px;
+      p {
+        width: 100%;
+        font-size: 30px;
+        color: #333333;
+        text-align: center;
+      }
+      img {
+        width: 384px;
+        margin-left: 75px;
+        margin-top: 40px;
+      }
+    }
+    .safety-model-right {
+      width: 665px;
+      height: 510px;
+      position: absolute;
+      top: 140px;
+      left: 515px;
+      background-color: #fff;
+      padding-top: 30px;
+      box-shadow: 0 2px 20px 0 rgba(219,219,219,0.50);
+      .safety-model-right-list {
+        display: flex;
+        height: 60px;
+        margin-bottom: 20px;;
+        >div {
+          padding-left: 25px;
+          padding-top: 8px;
+          p:nth-child(1) {
+            font-size: 18px;
+            color: #333333;
+          }
+          p:nth-child(2) {
+            font-size: 14px;
+            color: #666666;
+          }
+        }
+      }
+      >div:nth-child(2n) {
+        padding-left: 80px;
+      }
+      >div:nth-child(2n-1) {
+        padding-left: 150px;
+      }
+      .safety-model-right-title {
+        font-size: 30px;
+        color: #333333;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      .safety-model-right-num {
+        display: inline-block;
+        font-size: 56px;
+        color: #0177FB;
+        height: 60px;
+        line-height: 60px;
+      }
+    }
+  }
+  .safety-idea {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding:80px 0;
+    .content-text {
+      text-align: center;
+      margin-top: 30px;
+    }
+    img {
+      width: 1180px;
+      margin-top: 60px;
+    }
+  }
+  .scenarios {
+    padding:80px 0;
+    background: #F6FAFF;
+    >div{
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+    .content-title {
+      margin-bottom: 80px;
+    }
+    .scenarios-content-list {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 190px;
+      .scenarios-content-list-text {
+        width: 570px;
+        .scenarios-list-num {
+          font-size: 70px;
+          color: #0177FB;
+          line-height: 1;
+          margin-bottom: 10px;
+        }
+        .scenarios-list-title {
+          font-size: 26px;
+          color: #333333;
+          margin-bottom: 15px;
+        }
+        .content-text {
+          padding: 0;
+          width: 432px;
+        }
+      }
+      img {
+        width: 570px;
+      }
+    }
+    .scenarios-content-list:nth-child(1)>img{
+      height: 212px;
+      margin-left: 40px;
+    }
+    .scenarios-content-list:nth-child(2)>img{
+      height: 207px;
+    }
+    .scenarios-content-list:nth-child(3)>img{
+      height: 294px;
+      margin-left: 40px;
+    }
+    .scenarios-content-list:nth-child(4)>img{
+      height: 274px;
+    }
+    .scenarios-content-list:nth-child(4) .content-text {
+      width: 439px;
+    }
+    .scenarios-content-list:nth-child(2) .scenarios-content-list-text,
+    .scenarios-content-list:nth-child(4) .scenarios-content-list-text {
+      margin-left: 170px;
+    }
+    .scenarios-content-list:nth-child(4) {
+      margin-bottom: 0;
+    }
+  }
+}
